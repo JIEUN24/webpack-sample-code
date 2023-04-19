@@ -1,0 +1,10 @@
+@import "./scss/variables.scss";
+
+body {
+  background-color: yellow;
+}
+
+.click {
+  background: $main-color;
+  border: 2px solid blue;
+}

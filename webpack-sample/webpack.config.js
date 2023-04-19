@@ -15,7 +15,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    main: "./app.js",
+    main: "./src/app.js",
   },
   output: {
     path: path.resolve("./dist"),
@@ -24,8 +24,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [process.env.NODE_ENV === "production" ? MiniCssExtreactPlugin.loader : "style-loader", "css-loader"],
+        test: /\.scss|css$/,
+        use: [process.env.NODE_ENV === "production" ? MiniCssExtreactPlugin.loader : "style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
