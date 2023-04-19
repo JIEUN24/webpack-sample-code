@@ -15,3 +15,7 @@
 - @babel/plugin-transform-block-scoping (let, const => var)
 - @babel/plugin-transform-arrow-functions (화살표함수 => 함수표현식)
 - @babel/plugin-transform-strict-mode (엄격모드 실행)
+
+## Babel Preset
+
+- @babel/preset-env
