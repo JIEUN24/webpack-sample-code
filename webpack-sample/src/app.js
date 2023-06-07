@@ -6,6 +6,10 @@ document.getElementById("btn").onclick = function () {
   window.open(URI);
 };
 
+var foo = "";
+
+console.log();
+
 console.log(process.env.NODE_ENV);
 console.log(TWO);
 console.log(URI);

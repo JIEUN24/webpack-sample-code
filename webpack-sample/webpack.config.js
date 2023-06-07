@@ -21,6 +21,9 @@ module.exports = {
     path: path.resolve("./dist"),
     filename: "[name].js",
   },
+  devServer: {
+    // proxy 설정 가능
+  },
   module: {
     rules: [
       {
